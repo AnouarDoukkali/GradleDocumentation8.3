@@ -21,3 +21,20 @@ detekt {
         include("**/*.kts")
     }
 }
+
+
+// register a task
+tasks.register("hello") {
+    doFirst {
+        println("Hello Earth")
+    }
+}
+
+// get a task by it's name
+tasks.named("hello") {
+    doLast {
+        println("print last ")
+    }
+}
+// execute default task if no task are specified
+defaultTasks("clean")
