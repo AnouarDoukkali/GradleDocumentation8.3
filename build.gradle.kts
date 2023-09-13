@@ -69,3 +69,16 @@ tasks.named("hello") {
 }
 // execute a default task if no task are specified
 defaultTasks("clean")
+
+// we can set extra properties for the current project like this
+val purpose by extra("debug")
+extra["version"] = "1.0"
+
+// get project object extra properties
+tasks.register("extra") {
+    doLast {
+        println("getting current project extra property purpose : ${project.extra.get("purpose")}")
+        println("getting current project extra property version : ${project.extra.get("version")}")
+    }
+}
+
