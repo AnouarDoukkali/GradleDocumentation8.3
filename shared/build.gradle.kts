@@ -49,3 +49,6 @@ android {
         minSdk = 21
     }
 }
+
+// set extra property printNAme to true fot current project
+extra["printName"] = true

@@ -1,6 +1,8 @@
 plugins {
     `kotlin-dsl`
 }
+println("This is executed during the configuration phase in buildSrc build.gradle.kts")
+extra["printName"] = true
 
 
 // when the buildScript need external dependencies , those can be declared under buildScript Block

@@ -50,3 +50,7 @@ dependencies {
     implementation("androidx.compose.material:material")
     implementation(libs.androidx.activity.compose)
 }
+
+println("This is executed during the configuration phase in androidApp build.gradle.kts")
+
+extra["printName"] = true
