@@ -3,6 +3,7 @@ import io.gitlab.arturbosch.detekt.Detekt
 plugins {
     alias(libs.plugins.detekt)
     java
+    id("my-plugin") apply false
 }
 
 dependencies {

@@ -1,7 +1,7 @@
 [versions]
 #android
 activityCompose = "1.7.2"
-androidxComposeBom = "2023.09.00"
+androidxComposeBom = "2023.09.02"
 core-ktx = "1.12.0"
 androidGradlePlugin = "8.1.1"
 androidx-test-ext-junit = "1.1.5"
