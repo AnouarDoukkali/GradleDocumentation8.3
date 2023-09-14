@@ -84,3 +84,7 @@ tasks.register("extra") {
     }
 }
 
+
+logger.quiet("message displayed with at quiet level and higher")
+logger.lifecycle("message always displayed when configuring project")
+logger.info("message displayed at info level and higher")
