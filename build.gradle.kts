@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.detekt)
     java
     id("my-plugin") apply false
+    id("com.github.ben-manes.versions") apply false // using a plugin declared in settings.gradle
 }
 
 dependencies {
