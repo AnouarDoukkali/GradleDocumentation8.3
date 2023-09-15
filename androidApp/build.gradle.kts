@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    implementation(project(":shared"))
+    implementation(project(":shared")) // include subproject dependency
     val composeBom = platform(libs.androidx.compose.bom)
     implementation(composeBom)
     androidTestImplementation(composeBom)

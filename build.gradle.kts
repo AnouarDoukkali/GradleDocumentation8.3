@@ -27,8 +27,7 @@ detekt {
 // configuration phase
 println("This is executed during the configuration phase in root build.gradle.kts")
 
-
-//configuration phase 
+// configuration phase
 tasks.register("configured") {
     println("This is also executed during the configuration phase, because :configured is used in the build.")
     doFirst {
@@ -54,7 +53,6 @@ gradle.afterProject {
         println("this project name is ${project.name}")
     }
 }
-
 
 // register a task
 tasks.register("hello") {
@@ -83,7 +81,6 @@ tasks.register("extra") {
         println("getting current project extra property version : ${project.extra.get("version")}")
     }
 }
-
 
 logger.quiet("message displayed with at quiet level and higher")
 logger.lifecycle("message always displayed when configuring project")
